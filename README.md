@@ -9,10 +9,20 @@ The research question is how option markets respond to M&A news and whether defe
 The main empirical evidence has three different provenances:
 
 1. `ma_thesis.ipynb`: a saved QuantConnect Research notebook whose principal code cell has executed outputs. The QuantConnect US Equity Option Universe supplies vendor/model-derived IV, Greeks, option volume and open interest, **not a matched exchange-bid/ask execution tape**. This notebook needs QuantConnect data access to re-execute.
-2. `OptionChain_CPRI 20-Dec-24_20241023.csv` and `...20241024.csv`: historical December 20, 2024 CPRI option-chain exports uploaded by the thesis author from Market Chameleon. The 25 October observation is **not a CSV**, but a manually transcribed historical-chain screenshot from the author.
+2. `OptionChain_CPRI 20-Dec-24_20241023.csv` and `...20241024.csv`: historical December 20, 2024 CPRI option-chain exports uploaded by the thesis author from Market Chameleon. The 25 October observation is transcribed from the author's historical-chain screenshot, **not an original downloaded CSV**.
 3. `benchmark_event_study.py`: transcribed CPRI daily underlying close figures for October 21–November 15, 2024 based on user-supplied Barchart images, paired with FRED's S&P 500 daily index. The source table is present explicitly in the code. The 19-return reference-window rank is descriptive, not a valid broad-population hypothesis test.
 
 Historical contract quotations can be stale or asynchronous, and US equity options generally permit early exercise. Quoted midpoint option spreads are not guaranteed executable prices and are not automatically state probabilities.
+
+## Selected CPRI Market Chameleon data (public summary)
+
+For a concise, inspectable display of the option-chain observations used in the thesis:
+
+- **[CPRI quotation table — 23, 24 and 25 October 2024](data/README.md):** selected bid/ask prices, underlying stock prices, put-spread midpoint and quote-side ranges, with provenance and execution caveats.
+- **[Selected quotation CSV](data/cpri_selected_quotes.csv):** machine-readable version of the table for checking the calculations.
+- **[Put-spread chart](figures/cpri_put_spread.svg):** visual summary showing the repricing and the theoretical $5 terminal payoff cap.
+
+The 23–24 October selected values come from author-supplied Market Chameleon CSV exports; **the 25 October values were transcribed from a screenshot**, not downloaded as an original CSV. This GitHub repository does **not** contain full vendor market-data exports. Research scripts that read the original exports require separately obtained, appropriately licensed input files.
 
 ## Recreate the numeric tables and diagnostics
 
@@ -42,7 +52,7 @@ The quote-quality Python diagnostic uses European Black–Scholes only as a **se
 
 ## Data rights and publication
 
-The author-provided historical CSVs are included in the **private review package** for reproducibility. **Do not upload vendor-owned raw CSVs publicly unless the provider's licence permits redistribution.** The separate GitHub-ready source-code ZIP intentionally omits raw proprietary market-data files. A public GitHub repository has not been created or verified, so no public repository link appears in the thesis.
+The author-provided historical CSVs are included in the **private review package** for reproducibility. **Do not upload vendor-owned raw CSVs publicly unless the provider's licence permits redistribution.** The separate GitHub-ready source-code ZIP intentionally omits raw proprietary market-data files. The public research repository is https://github.com/rkmyv2shgz-cmd/ma-options-thesis-research . The final thesis should link to this repository in its reproducibility appendix.
 
 ## References
 
