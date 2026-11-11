@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="860" height="545" viewBox="0 0 860 545" role="img" aria-labelledby="t d">
+<title id="t">CPRI $40/$35 put spread around the injunction, 23–25 October 2024</title>
+<desc id="d">December 2024 expiry. Midpoint values: $1.60 on Oct 23, $1.65 on Oct 24, $4.90 on Oct 25. Vertical whiskers show two-leg quote-side ranges, not confidence intervals. Dotted line shows $5 terminal payoff cap.</desc>
+<rect width="860" height="545" fill="white"/>
+<g font-family="Arial, Helvetica, sans-serif" fill="#17243b">
+<text x="430" y="38" text-anchor="middle" font-size="23" font-weight="600">CPRI: Dec 2024 $40/$35 put vertical</text>
+<text x="430" y="63" text-anchor="middle" font-size="14" fill="#607087">Historical quotes around the October 2024 injunction</text>
+</g>
+<g stroke="#e0e6ed" stroke-width="1">
+<line x1="116" y1="468" x2="805" y2="468"/>
+<line x1="116" y1="396" x2="805" y2="396"/>
+<line x1="116" y1="324" x2="805" y2="324"/>
+<line x1="116" y1="252" x2="805" y2="252"/>
+<line x1="116" y1="180" x2="805" y2="180"/>
+<line x1="116" y1="108" x2="805" y2="108"/>
+</g>
+<g font-family="Arial,Helvetica,sans-serif" font-size="14" fill="#556377">
+<text x="95" y="473" text-anchor="end">0</text>
+<text x="95" y="401" text-anchor="end">1</text>
+<text x="95" y="329" text-anchor="end">2</text>
+<text x="95" y="257" text-anchor="end">3</text>
+<text x="95" y="185" text-anchor="end">4</text>
+<text x="95" y="113" text-anchor="end">5</text>
+<text x="205" y="501" text-anchor="middle">23 Oct</text>
+<text x="456" y="501" text-anchor="middle">24 Oct</text>
+<text x="706" y="501" text-anchor="middle">25 Oct</text>
+<text transform="translate(28,300) rotate(-90)" text-anchor="middle">Put vertical quoted price ($ per share)</text>
+<text x="430" y="532" text-anchor="middle" font-size="12">Quote-side bars, not statistical confidence intervals</text>
+</g>
+<path d="M116 108 H805" stroke="#878e98" stroke-dasharray="7 5" stroke-width="1.6" fill="none"/>
+<text x="800" y="96" text-anchor="end" font-family="Arial, Helvetica, sans-serif" font-size="13" fill="#767d86">$5 terminal payoff cap</text>
+<g stroke="#9ca9b9" stroke-width="3" stroke-linecap="square">
+<path d="M205 288 V418 M193 288 H217 M193 418 H217"/>
+<path d="M456 288 V410 M444 288 H468 M444 410 H468"/>
+<path d="M706 94 V137 M694 94 H718 M694 137 H718"/>
+</g>
+<polyline points="205,352.8 456,349.2 706,115.2" fill="none" stroke="#174a85" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<g fill="#174a85" stroke="white" stroke-width="2">
+<circle cx="205" cy="352.8" r="6.5"/><circle cx="456" cy="349.2" r="6.5"/><circle cx="706" cy="115.2" r="6.5"/>
+</g>
+<g font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="600" fill="#174a85">
+<text x="205" y="337" text-anchor="middle">$1.60</text>
+<text x="456" y="333" text-anchor="middle">$1.65</text>
+<text x="695" y="155" text-anchor="end">$4.90</text>
+</g>
+</svg>
